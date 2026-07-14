@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Result</title>
+</head>
+<body>
+
+    <h1>Resume Analysis Result</h1>
+
+    <h2>Match Percentage</h2>
+    <p>{{ match_percentage }}%</p>
+
+    <h2>Missing Skills</h2>
+
+    <ul>
+        {% for skill in missing_skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+
+</body>
+</html>
